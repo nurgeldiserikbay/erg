@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/fonts/fonts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <title>ERG</title>
+  <script src="./ScrollTrigger.min.js"></script>
+  <script src="./gsap.min.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <section id="main" class="panel" data-num="0">
+      <header>
+        <a class="logo" id="logo" href="./index.html">
+          <img src="./assets/logo.png" alt="">
+          <span>CACG</span>
+        </a>
+        <div class="email">
+          <a href="mailto:info@cacg.kz">info@cacg.kz</a>
+          <img src="./assets/email.png" alt="">
+        </div>
+      </header>
+      <div id="banner">
+        <h1 class="hidden anim_slideInUp">Технико-коммерческое предложение на реализацию проекта</h1>
+        <p class="hidden anim_slideInUp" data-delay="0.5">Разработка цифровых образовательных ресурсов (ЦОР) </p>
+      </div>
+      <div class="rect bg"></div>
+    </section>
+    <section id="goals" class="section panel" data-num="1">
+      <h2 class="hidden anim_slideInUp">Цели проекта</h2>
+      <ul class="list">
+        <li class="hidden anim_slideInUp" data-delay="0.3"><span>1</span>Повышение качества обучения персонала
+        </li>
+        <li class="hidden anim_slideInUp" data-delay="0.6"><span>2</span>Повышение наглядности и интерактивности
+          обучения</li>
+        <li class="hidden anim_slideInUp" data-delay="0.9"><span>3</span>Визуализация рисков неправильного выполнения
+          трудовых
+          операций, формирования корректной системы оценки данных рисков у работника</li>
+        <li class="hidden anim_slideInUp" data-delay="1.2"><span>4</span>Снижение вероятности проведения некачественных
+          работ
+        </li>
+        <li class="hidden anim_slideInUp" data-delay="1.5"><span>5</span>Обеспечение оперативной переподготовки кадров
+          внутри
+          предприятия
+        </li>
+      </ul>
+    </section>
+    <section id="view-1" class="panel" data-num="2">
+      <h2 class="hidden anim_slideInUp">Как это будет выглядеть?</h2>
+      <div class="row">
+        <div class="col">
+          <div class="video-container anim_left first-video grey">
+            <video src="./assets/pozhbez.mp4" poster="./assets/poster1.jpg"></video>
+            <span class="play-btn"></span>
+            <button class="close-btn hide">Вернуться на сайт!</button>
+          </div>
+        </div>
+        <div class="text right">
+          <h3 class="hidden anim_slideInUp">Огнетушители и правила их хранения</h3>
+          <ul class="list">
+            <li class="hidden anim_slideInUp" data-delay="0.3"><span>1</span>Слушатель должен перечислять составные
+              части
+              порошкового огнетушителя</li>
+            <li class="hidden anim_slideInUp" data-delay="0.6"><span>2</span>Слушатель должен объяснять/описывать
+              последовательность приведения
+              огнетушителя в действие
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="rect vr1"></div>
+    </section>
+    <section id="view-2" class="panel" data-num="2">
+      <div class="row">
+        <div class="text">
+          <h3 class="hidden anim_slideInUp">Способы строповки</h3>
+          <ul class="list">
+            <li class="hidden anim_slideInUp" data-delay="0.3"><span>1</span>Ознакомиться с основными способами
+              строповки груза</li>
+            <li class="hidden anim_slideInUp" data-delay="0.6"><span>2</span>Правильно определять способ строповки в
+              зависимости от вида груза</li>
+          </ul>
+        </div>
+        <div class="col">
+          <div class="hidden video-container anim_right animation-video" data-delay="0.2">
+            <video src="./assets/stropovka.mp4" poster="./assets/poster2.jpg"></video>
+            <div class="test_wrapper hide">
+              <div class="blocks blocks-1" data-id="1" data-val="true" data-video="./assets/2-1-2.mp4">
+                <div class="t_head">Способ строповки «на удавку»</div>
+                <video src="./assets/2-1.mp4"></video>
+                <img src="./assets/2-1.jpg" alt="">
+                <div class="hide_text">Предполагает формирование петли вокруг груза, пропуская один конец стропа через
+                  другой или используя специальные крюки.</div>
+              </div>
+              <div class="blocks blocks-2" data-id="2" data-val="false" data-video="./assets/2-2-2.mp4">
+                <div class="t_head">Захваты и скобы</div>
+                <video src="./assets/2-2.mp4"></video>
+                <img src="./assets/2-2.jpg" alt="">
+                <div class="hide_text">Листовые конструкции и мелкие стальные элементы поднимают и транспортируют с
+                  применением захватов и скоб.</div>
+              </div>
+              <div class="blocks blocks-3" data-id="3" data-val="false" data-video="./assets/2-3-2.mp4">
+                <div class="t_head">Специальные траверсы и скобы</div>
+                <video src="./assets/2-3.mp4"></video>
+                <img src="./assets/2-3.jpg" alt="">
+                <div class="hide_text">Применяются для подъема и перемещения крупногабаритных грузов при помощи
+                  грузозахватных устройств или строп.</div>
+              </div>
+              <div class="instruction">
+                <div class="t_head"></div>
+                <span></span>
+                <button>OK</button>
+              </div>
+              <button class="btns btnToSecondPart hide">К заданию</button>
+              <div class="total-video hide">
+                <div class="vc">
+                  <video src="" id="video"></video>
+                </div>
+              </div>
+              <img src="./assets/mass.png" alt="" class="total-video-img hide">
+            </div>
+            <span class="play-btn"></span>
+          </div>
+        </div>
+      </div>
+      <div class="rect vr2"></div>
+    </section>
+    <section id="order" class="panel" data-num="3">
+      <h2 class="hidden anim_slideInUp">Порядок выполнения проекта</h2>
+      <div class="row">
+        <div>
+          <div class="img_wrapper anim_opacity" data-delay="0.9">
+            <img src="./assets/order.png" alt="">
+          </div>
+        </div>
+        <div class="text">
+          <ul class="list">
+            <li class="hidden anim_slideInUp" data-delay="0.3"><span>1</span>Согласование и подписание договора на
+              Разработку
+            </li>
+            <li class="hidden anim_slideInUp" data-delay="0.6"><span>2</span>Предпроектное исследование (сбор
+              материалов,
+              анализ и согласование технических требований).
+            </li>
+            <li class="hidden anim_slideInUp" data-delay="0.9"><span>3</span>Поэтапное программирование и поэтапная
+              сдача
+              работ.</li>
+            <li class="hidden anim_slideInUp" data-delay="1.2"><span>4</span>Финальное тестирование проекта.</li>
+            <li class="hidden anim_slideInUp" data-delay="1.5"><span>5</span>Закрытие проекта, ввод Модуля в постоянную
+              эксплуатацию.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="cost" class="panel" data-num="4">
+      <h2 class="hidden anim_slideInUp">Предложение по стоимости</h2>
+      <div class="table">
+        <div class="hidden t_row t_head anim_slideInUp" data-delay="0.3">
+          <div class="col-1">№</div>
+          <div class="col-2">Вид работ</div>
+          <div class="col-3">Ответственный</div>
+          <div class="col-4">Цена за единицу(час)</div>
+          <div class="col-5">Кол-во часов/объема</div>
+          <div class="col-6">Стоимость (тыс.тг)</div>
+        </div>
+        <div class="hidden t_row anim_slideInUp" data-delay="0.6">
+          <div class="col-1">1</div>
+          <div class="col-2">Экперты предметной области предоставляют раздаточный материал для работы над контентом</div>
+          <div class="col-3">Аналитик</div>
+          <div class="col-4">4 000</div>
+          <div class="col-5">80</div>
+          <div class="col-6">32 0000</div>
+        </div>
+        <div class="hidden t_row anim_slideInUp" data-delay="0.9">
+          <div class="col-1">2</div>
+          <div class="col-2">Проведение анализа раздаточного материала,выстроение ОЦ. Написание концепций</div>
+          <div class="col-3">Пед.дизайнер</div>
+          <div class="col-4">3 000</div>
+          <div class="col-5">80</div>
+          <div class="col-6">24 0000</div>
+        </div>
+        <div class="hidden t_row anim_slideInUp" data-delay="1.2">
+          <div class="col-1">3</div>
+          <div class="col-2">Разработка индивидуального дизайна интерфейса ЦОР</div>
+          <div class="col-3">UX&UI дизайнер</div>
+          <div class="col-4">5 000</div>
+          <div class="col-5">80</div>
+          <div class="col-6">40 0000</div>
+        </div>
+        <div class="hidden t_row anim_slideInUp" data-delay="1.5">
+          <div class="col-1">4</div>
+          <div class="col-2">Построение архитектуры проекта. Сборка основного интерфейса ЦОР</div>
+          <div class="col-3">Разработчик</div>
+          <div class="col-4">9 000</div>
+          <div class="col-5">80</div>
+          <div class="col-6">72 0000</div>
+        </div>
+        <div class="hidden t_row anim_slideInUp" data-delay="1.8">
+          <div class="col-1">5</div>
+          <div class="col-2">Написания сценария ЦОР</div>
+          <div class="col-3">Пед.дизайнер</div>
+          <div class="col-4">3 000</div>
+          <div class="col-5">40</div>
+          <div class="col-6">120 000</div>
+        </div>
+        <div class="hidden t_row anim_slideInUp" data-delay="2.1">
+          <div class="col-1">6</div>
+          <div class="col-2">Разработка графических элементов ЦОР</div>
+          <div class="col-3">Графический дизайнер</div>
+          <div class="col-4">4 000</div>
+          <div class="col-5">32</div>
+          <div class="col-6">128 000</div>
+        </div>
+        <div class="hidden t_row anim_slideInUp" data-delay="2.4">
+          <div class="col-1">7</div>
+          <div class="col-2">Разработка видео-анимации к ЦОР</div>
+          <div class="col-3">Motion дизайнер</div>
+          <div class="col-4">4 000</div>
+          <div class="col-5">64</div>
+          <div class="col-6">256 000</div>
+        </div>
+        <div class="hidden t_row anim_slideInUp" data-delay="2.7">
+          <div class="col-1">8</div>
+          <div class="col-2">Разработка 3D моделей для ЦОР</div>
+          <div class="col-3">3D дизайнер</div>
+          <div class="col-4">4 000</div>
+          <div class="col-5">32</div>
+          <div class="col-6">128 000</div>
+        </div>
+        <div class="hidden t_row anim_slideInUp" data-delay="3">
+          <div class="col-1">9</div>
+          <div class="col-2">Разработка и верстка интерфейса ЦОР</div>
+          <div class="col-3">Frontend разработчик</div>
+          <div class="col-4">9 000</div>
+          <div class="col-5">54</div>
+          <div class="col-6">486 000</div>
+        </div>
+        <div class="hidden t_row anim_slideInUp" data-delay="3.3">
+          <div class="col-1">10</div>
+          <div class="col-2">Руководитель проекта, полное сопровождение этапов разработки</div>
+          <div class="col-3">Проектный менеджер</div>
+          <div class="col-4">3 500</div>
+          <div class="col-5">90</div>
+          <div class="col-6">315 000</div>
+        </div>
+        <div class="hidden t_row anim_slideInUp" data-delay="3.6">
+          <div class="col-1">11</div>
+          <div class="col-2">Проведение тестов на работоспособность</div>
+          <div class="col-3">Тестировщик</div>
+          <div class="col-4">3 000</div>
+          <div class="col-5">16</div>
+          <div class="col-6">48 000</div>
+        </div>
+        <div class="hidden t_row anim_slideInUp" data-delay="3.9">
+          <div class="col-1">12</div>
+          <div class="col-2">Запись закадрового текста</div>
+          <div class="col-3">Звуко-режиссер</div>
+          <div class="col-4">5 000</div>
+          <div class="col-5">6 стр А4</div>
+          <div class="col-6">30 000</div>
+        </div>
+        <div class="hidden t_row anim_slideInUp" data-delay="4.2">
+          <div class="col-1">13</div>
+          <div class="col-2">Перевод контента, библиотеки на казахский язык</div>
+          <div class="col-3">Переводчики</div>
+          <div class="col-4">1 600</div>
+          <div class="col-5">45 стр А4</div>
+          <div class="col-6">80 000</div>
+        </div>
+        <div class="hidden t_row anim_slideInUp not-line" data-delay="4.5">
+          <div class="col-1"></div>
+          <div class="col-2"></div>
+          <div class="col-3"></div>
+          <div class="col-4"></div>
+          <div class="col-5">Итого</div>
+          <div class="col-6">3 271 000</div>
+        </div>
+        <div class="hidden lines line-1 anim_slideInUp" data-delay="2.1"></div>
+        <div class="hidden lines line-2 anim_slideInUp" data-delay="2.1"></div>
+        <div class="hidden lines line-3 anim_slideInUp" data-delay="2.1"></div>
+        <div class="hidden lines line-4 anim_slideInUp" data-delay="2.1"></div>
+        <div class="hidden lines line-5 anim_slideInUp" data-delay="2.1"></div>
+      </div>
+      <div class="rect bg"></div>
+    </section>
+    <section id="footer" class="panel" data-num="5">
+      <ul class="list">
+        <li class="hidden anim_slideInUp" data-delay="0.3"><span>1</span>Общая длительность разработки зависит от объема
+          работ.
+        </li>
+        <li class="hidden anim_slideInUp" data-delay="0.6"><span>2</span>Список и сроки работ могут быть изменены по
+          согласованию обеих сторон на основании Спецификаций, составляемых для каждой работы.</li>
+        <li class="hidden anim_slideInUp" data-delay="0.9"><span>3</span>Оплата за услуги разработки: 30% предоплата,
+          20% по
+          мере сдачи проекта, 50% по завершению проекта и подписания акта выполненных услуг</li>
+      </ul>
+      <a class="send anim_opacity" href="./assets/cost.pdf" download>
+        Скачать коммерческое предложение
+      </a>
+      <footer>
+        <p class="copyright">©2021 CACG. ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
+      </footer>
+    </section>
+  </div>
+  <script src="./index.js"></script>
+  <script src="./test.js"></script>
+  <script>
+  	document.querySelectorAll(".video-container>video").forEach((elem) => elem.addEventListener("ended", (e) => {e.currentTarget.load()}));
+  </script>
+</body>
+
+</html>
